@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 const { Component, computed } = Ember;
 
-export default Ember.Component.extend({
+export default Component.extend({
   classNames: ['input-field'],
   type: 'text',
   _errorMessages: computed('errors.[]', function() {
