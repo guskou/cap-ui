@@ -1,1 +1,24 @@
+<div class="dashboard-content">
+    <div class="row transparent">
+        <div class="col s2 m4">
+            {{#requests-card
+            title="Requests"
+            }}
+            {{/requests-card}}
+
+            {{#packets-card
+            title="Packets"
+            }}
+            {{/packets-card}}
+        </div>
+
+        <div class="col s10 m8">
+            {{#detail-card
+            title="Stop Start Continue Review"
+            }}
+            {{/detail-card}}
+        </div>
+
+    </div>
+</div>
 {{yield}}
