@@ -18,7 +18,7 @@ module.exports = function(environment) {
       // when it is created
     },
     fastboot: {
-      hostWhitelist: [/^localhost:\d+$/]
+      hostWhitelist: ['enigmatic-brook-93903.herokuapp.com', /^localhost:\d+$/]
     },
     DS: {
       host: 'http://localhost:4000',
