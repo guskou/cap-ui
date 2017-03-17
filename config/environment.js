@@ -17,6 +17,9 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
+    fastboot: {
+      hostWhitelist: [/^localhost:\d+$/]
+    },
     DS: {
       host: 'http://localhost:4000',
       namespace: 'api'
@@ -25,6 +28,10 @@ module.exports = function(environment) {
       authenticationRoute: 'auth.login',
       routeIfAlreadyAuthenticated: 'app.index',
       routeAfterAuthentication: 'app.index'
+    },
+    flashMessageDefaults: {
+      timeout: 3000,
+      extendedTimeout: 375
     }
   };
 
